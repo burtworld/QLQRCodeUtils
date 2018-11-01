@@ -6,40 +6,9 @@
 	objectVersion = 48;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		5F07078E20107CAB000EC576 /* QLQRCodeBackgroundView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F07078C20107CAB000EC576 /* QLQRCodeBackgroundView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5F07078F20107CAB000EC576 /* QLQRCodeBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F07078D20107CAB000EC576 /* QLQRCodeBackgroundView.m */; };
-		5F070792201080E8000EC576 /* QLQRCodeAreaView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F070790201080E8000EC576 /* QLQRCodeAreaView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5F070793201080E8000EC576 /* QLQRCodeAreaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F070791201080E8000EC576 /* QLQRCodeAreaView.m */; };
-		5F0707982010826C000EC576 /* back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0707942010826C000EC576 /* back@3x.png */; };
-		5F0707992010826C000EC576 /* scanArea@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0707952010826C000EC576 /* scanArea@2x.png */; };
-		5F07079A2010826C000EC576 /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0707962010826C000EC576 /* back@2x.png */; };
-		5F07079B2010826C000EC576 /* line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0707972010826C000EC576 /* line@2x.png */; };
-		5F610EFB20109DCB0003444C /* UIImage+QLGeneratorQrCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F610EF920109DCB0003444C /* UIImage+QLGeneratorQrCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5F610EFC20109DCB0003444C /* UIImage+QLGeneratorQrCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F610EFA20109DCB0003444C /* UIImage+QLGeneratorQrCode.m */; };
-		5FC2FB502010464100A9A367 /* QLQRCodeUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC2FB4E2010464100A9A367 /* QLQRCodeUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5FC2FB582010466800A9A367 /* QLQRCodeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC2FB562010466800A9A367 /* QLQRCodeViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5FC2FB592010466800A9A367 /* QLQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC2FB572010466800A9A367 /* QLQRCodeViewController.m */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
 		5F07078120104A4A000EC576 /* QLQRCodeUtils.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QLQRCodeUtils.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		5F07078320104A4A000EC576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5F07078C20107CAB000EC576 /* QLQRCodeBackgroundView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QLQRCodeBackgroundView.h; sourceTree = "<group>"; };
-		5F07078D20107CAB000EC576 /* QLQRCodeBackgroundView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QLQRCodeBackgroundView.m; sourceTree = "<group>"; };
-		5F070790201080E8000EC576 /* QLQRCodeAreaView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QLQRCodeAreaView.h; sourceTree = "<group>"; };
-		5F070791201080E8000EC576 /* QLQRCodeAreaView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QLQRCodeAreaView.m; sourceTree = "<group>"; };
-		5F0707942010826C000EC576 /* back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@3x.png"; sourceTree = "<group>"; };
-		5F0707952010826C000EC576 /* scanArea@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scanArea@2x.png"; sourceTree = "<group>"; };
-		5F0707962010826C000EC576 /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
-		5F0707972010826C000EC576 /* line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "line@2x.png"; sourceTree = "<group>"; };
-		5F610EF920109DCB0003444C /* UIImage+QLGeneratorQrCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+QLGeneratorQrCode.h"; sourceTree = "<group>"; };
-		5F610EFA20109DCB0003444C /* UIImage+QLGeneratorQrCode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+QLGeneratorQrCode.m"; sourceTree = "<group>"; };
 		5FC2FB4B2010464100A9A367 /* QLQRCodeUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QLQRCodeUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5FC2FB4E2010464100A9A367 /* QLQRCodeUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QLQRCodeUtils.h; sourceTree = "<group>"; };
-		5FC2FB4F2010464100A9A367 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5FC2FB562010466800A9A367 /* QLQRCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QLQRCodeViewController.h; sourceTree = "<group>"; };
-		5FC2FB572010466800A9A367 /* QLQRCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QLQRCodeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,23 +29,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5F07078220104A4A000EC576 /* QLQRCodeUtilsBundle */ = {
-			isa = PBXGroup;
-			children = (
-				5F0707962010826C000EC576 /* back@2x.png */,
-				5F0707942010826C000EC576 /* back@3x.png */,
-				5F0707972010826C000EC576 /* line@2x.png */,
-				5F0707952010826C000EC576 /* scanArea@2x.png */,
-				5F07078320104A4A000EC576 /* Info.plist */,
-			);
-			path = QLQRCodeUtilsBundle;
-			sourceTree = "<group>";
-		};
 		5FC2FB412010464100A9A367 = {
 			isa = PBXGroup;
 			children = (
-				5FC2FB4D2010464100A9A367 /* QLQRCodeUtils */,
-				5F07078220104A4A000EC576 /* QLQRCodeUtilsBundle */,
 				5FC2FB4C2010464100A9A367 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,23 +45,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5FC2FB4D2010464100A9A367 /* QLQRCodeUtils */ = {
-			isa = PBXGroup;
-			children = (
-				5FC2FB4E2010464100A9A367 /* QLQRCodeUtils.h */,
-				5FC2FB562010466800A9A367 /* QLQRCodeViewController.h */,
-				5FC2FB572010466800A9A367 /* QLQRCodeViewController.m */,
-				5F07078C20107CAB000EC576 /* QLQRCodeBackgroundView.h */,
-				5F07078D20107CAB000EC576 /* QLQRCodeBackgroundView.m */,
-				5F070790201080E8000EC576 /* QLQRCodeAreaView.h */,
-				5F070791201080E8000EC576 /* QLQRCodeAreaView.m */,
-				5F610EF920109DCB0003444C /* UIImage+QLGeneratorQrCode.h */,
-				5F610EFA20109DCB0003444C /* UIImage+QLGeneratorQrCode.m */,
-				5FC2FB4F2010464100A9A367 /* Info.plist */,
-			);
-			path = QLQRCodeUtils;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -114,11 +52,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F07078E20107CAB000EC576 /* QLQRCodeBackgroundView.h in Headers */,
-				5FC2FB582010466800A9A367 /* QLQRCodeViewController.h in Headers */,
-				5FC2FB502010464100A9A367 /* QLQRCodeUtils.h in Headers */,
-				5F610EFB20109DCB0003444C /* UIImage+QLGeneratorQrCode.h in Headers */,
-				5F070792201080E8000EC576 /* QLQRCodeAreaView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,10 +137,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F07079B2010826C000EC576 /* line@2x.png in Resources */,
-				5F0707992010826C000EC576 /* scanArea@2x.png in Resources */,
-				5F0707982010826C000EC576 /* back@3x.png in Resources */,
-				5F07079A2010826C000EC576 /* back@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +190,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F610EFC20109DCB0003444C /* UIImage+QLGeneratorQrCode.m in Sources */,
-				5FC2FB592010466800A9A367 /* QLQRCodeViewController.m in Sources */,
-				5F07078F20107CAB000EC576 /* QLQRCodeBackgroundView.m in Sources */,
-				5F070793201080E8000EC576 /* QLQRCodeAreaView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
