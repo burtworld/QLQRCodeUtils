@@ -14,6 +14,7 @@
  *  support version: ios8 and later
  *  Privacy - Camera Usage Description
  *  Privacy - Photo Library Usage Description
+ *  version `0.0.2`
  **/
 
 #import "QLQRCodeViewController.h"

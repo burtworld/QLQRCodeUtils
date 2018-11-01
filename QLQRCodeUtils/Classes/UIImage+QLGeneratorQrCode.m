@@ -40,10 +40,8 @@
     });
 }
 
-//这里的size我是用imageview的宽度来算的，你可以改为自己想要的size
+
 + (UIImage *)creatUIImageFromCIImage:(CIImage *)image Size:(CGFloat)size {
-    
-    //下面是创建bitmao没什么好解释的,不懂得自行百度或者参考官方文档
     
     CGRect extent = CGRectIntegral(image.extent);
     CGFloat scale = MIN(size/CGRectGetWidth(extent), size/CGRectGetHeight(extent));
@@ -73,7 +71,6 @@
     
 }
 
-//! 设置圆角，并绽放至适合的大小
 - (UIImage *)imageCornerRadius:(CGFloat)cornerRadius size:(CGSize)size {
     
     //这里是将图片进行处理，frame不能太大，否则会挡住二维码

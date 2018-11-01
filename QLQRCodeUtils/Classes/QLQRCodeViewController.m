@@ -56,13 +56,21 @@
     [backbutton addTarget:self action:@selector(clickBackButton) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:backbutton];
     
-   
+    //相册键
+//    UIButton *photobutton = [UIButton buttonWithType:UIButtonTypeCustom];
+//    photobutton.frame = CGRectMake(screen_width - 42 - 12, 26, 42, 42);
+//    [photobutton setTitle:@"相册" forState:UIControlStateNormal];
+//    [photobutton addTarget:self action:@selector(showAlbum:) forControlEvents:UIControlEventTouchUpInside];
+//    [self.view addSubview:photobutton];
 }
 
 - (void)clickBackButton {
     if (self.presentedViewController) {
         [self dismissViewControllerAnimated:YES completion:NULL];
     }else{
+        if (_delegate && [_delegate respondsToSelector:@selector(onQRCodeScaned:)]) {
+            [_delegate onQRCodeScaned:nil];
+        }
         [self.navigationController popViewControllerAnimated:YES];
     }
 }
@@ -153,7 +161,9 @@
     [self.view.layer addSublayer:cropLayer];
 }
 
-
+- (void)showAlbum:(UIButton *)btn {
+    
+}
 
 #pragma mark - AVCaptureMetadataOutputObjectsDelegate
 - (void)captureOutput:(AVCaptureOutput *)output didOutputMetadataObjects:(NSArray<__kindof AVMetadataObject *> *)metadataObjects fromConnection:(AVCaptureConnection *)connection {

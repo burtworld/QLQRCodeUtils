@@ -62,8 +62,9 @@
 
 
 + (UIImage *)bundleImageWithName:(NSString *)imgName {
-    NSString *name = [@"QLQRCodeUtils.bundle" stringByAppendingPathComponent:imgName];
-    UIImage * image = [UIImage imageNamed:name];
+    UIImage * image = [UIImage imageNamed:imgName inBundle:[NSBundle bundleForClass:[self class]] compatibleWithTraitCollection:nil];
+//    NSString *name = [@"QLQRCodeUtils.bundle" stringByAppendingPathComponent:imgName];
+//    UIImage * image = [UIImage imageNamed:name];
     return image ? image : [UIImage imageNamed:imgName];
 }
 
