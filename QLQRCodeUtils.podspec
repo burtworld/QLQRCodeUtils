@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "QLQRCodeUtils"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "iOS二维码工具包"
 
   # This description is used to generate tags and improve search results.
