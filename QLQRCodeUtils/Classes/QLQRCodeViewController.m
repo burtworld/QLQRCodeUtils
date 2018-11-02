@@ -68,9 +68,6 @@
     if (self.presentedViewController) {
         [self dismissViewControllerAnimated:YES completion:NULL];
     }else{
-        if (_delegate && [_delegate respondsToSelector:@selector(onQRCodeScaned:)]) {
-            [_delegate onQRCodeScaned:nil];
-        }
         [self.navigationController popViewControllerAnimated:YES];
     }
 }
@@ -94,9 +91,12 @@
         [self presentViewController:alert animated:YES completion:nil];
         return;
     }
+    
+    
+    
     // Device
     _device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
-    
+    [self setupDeivce];
     // Input
     _input = [AVCaptureDeviceInput deviceInputWithDevice:_device error:nil];
     
@@ -147,6 +147,30 @@
     [_session startRunning];
 }
 
+- (void)setupDeivce {
+    if (_device) {
+        if ([_device lockForConfiguration:nil])
+        {
+            //自动白平衡
+            if ([_device isWhiteBalanceModeSupported:AVCaptureWhiteBalanceModeContinuousAutoWhiteBalance])
+            {
+                [_device setWhiteBalanceMode:AVCaptureWhiteBalanceModeContinuousAutoWhiteBalance];
+            }
+            //自动对焦
+            if ([_device isFocusModeSupported:AVCaptureFocusModeContinuousAutoFocus])
+            {
+                [_device setFocusMode:AVCaptureFocusModeContinuousAutoFocus];
+            }
+            //自动曝光
+            if ([_device isExposureModeSupported:AVCaptureExposureModeContinuousAutoExposure])
+            {
+                [_device setExposureMode:AVCaptureExposureModeContinuousAutoExposure];
+            }
+            [_device unlockForConfiguration];
+        }
+    }
+}
+
 - (void)setCropRect:(CGRect)cropRect{
     cropLayer = [[CAShapeLayer alloc] init];
     CGMutablePathRef path = CGPathCreateMutable();
@@ -174,6 +198,7 @@
         if (_delegate && [_delegate respondsToSelector:@selector(onQRCodeScaned:)]) {
             [_delegate onQRCodeScaned:metadataObject.stringValue];
         }
+        [self clickBackButton];
     }
 }
 

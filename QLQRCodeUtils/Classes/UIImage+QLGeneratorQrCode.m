@@ -113,10 +113,15 @@
     
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
+    return [self detectQRCodeFromImage:image];
+}
+
++ (NSArray *)detectQRCodeFromImage:(UIImage *)image {
+    image = [self renderImage:image];
     CIImage *ciImage = [[CIImage alloc] initWithCGImage:image.CGImage options:nil];
     CIContext *ciContext = [CIContext contextWithOptions:@{kCIContextUseSoftwareRenderer : @(YES)}]; // 软件渲染
     CIDetector *detector = [CIDetector detectorOfType:CIDetectorTypeQRCode context:ciContext options:@{CIDetectorAccuracy : CIDetectorAccuracyHigh}];// 二维码识别
-
+    
     NSArray *features = [detector featuresInImage:ciImage];
     if (features.count > 0) {
         NSMutableArray *array = [NSMutableArray array];
@@ -127,6 +132,33 @@
     }
     
     return nil;
+}
+
+#pragma mark - private
+/// 将图片压缩至256
++ (UIImage *)renderImage:(UIImage *)theImage {
+    UIImage* bigImage = theImage;
+    float actualHeight = bigImage.size.height;
+    float actualWidth = bigImage.size.width;
+    float newWidth =0;
+    float newHeight =0;
+    if(actualWidth > actualHeight) {
+        //宽图
+        newHeight =256.0f;
+        newWidth = actualWidth / actualHeight * newHeight;
+    }
+    else
+    {
+        //长图
+        newWidth =256.0f;
+        newHeight = actualHeight / actualWidth * newWidth;
+    }
+    CGRect rect =CGRectMake(0.0,0.0, newWidth, newHeight);
+    UIGraphicsBeginImageContext(rect.size);
+    [bigImage drawInRect:rect];// scales image to rect
+    theImage =UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return theImage;
 }
 
 @end

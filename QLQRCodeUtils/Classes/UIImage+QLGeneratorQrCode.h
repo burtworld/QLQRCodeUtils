@@ -13,6 +13,9 @@
 + (void)generatorQrCode:(NSString *)qrString size:(CGSize)size addImage:(UIImage *)image corner:(CGFloat)corner result:(void(^)(UIImage *img))block;
 - (UIImage *)imageCornerRadius:(CGFloat)cornerRadius size:(CGSize)size;
 - (UIImage *)addSubImage:(UIImage *)subImage;
-+ (NSArray *)detectQRCodeFromView:(UIView *)view;
 
+
+// 识别图片中的二维码
++ (NSArray *)detectQRCodeFromView:(UIView *)view;
++ (NSArray *)detectQRCodeFromImage:(UIImage *)image;
 @end
