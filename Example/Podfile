@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'QLQRCodeUtils_Example' do
+  pod 'QLQRCodeUtils', :path => '../'
+
+  target 'QLQRCodeUtils_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
