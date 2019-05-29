@@ -1,0 +1,16 @@
+PODS:
+  - QLQRCodeUtils (0.0.6)
+
+DEPENDENCIES:
+  - QLQRCodeUtils (from `../`)
+
+EXTERNAL SOURCES:
+  QLQRCodeUtils:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  QLQRCodeUtils: 831cfa69c4ea6e273eef905fe5b8f131a5c5729a
+
+PODFILE CHECKSUM: dbe7777fa5429d9d1d5e48eb2884fb4ffbc6a046
+
+COCOAPODS: 1.6.1

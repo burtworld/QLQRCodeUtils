@@ -58,13 +58,13 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6A696208F19B9C178EB3F193 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		6A696208F19B9C178EB3F193 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		923232ABD19334C70DF03E2B /* QLQRCodeUtils.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = QLQRCodeUtils.podspec; path = ../QLQRCodeUtils.podspec; sourceTree = "<group>"; };
+		923232ABD19334C70DF03E2B /* QLQRCodeUtils.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = QLQRCodeUtils.podspec; path = ../QLQRCodeUtils.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		97395000D65C95B7154A8646 /* Pods-QLQRCodeUtils_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QLQRCodeUtils_Tests.release.xcconfig"; path = "Target Support Files/Pods-QLQRCodeUtils_Tests/Pods-QLQRCodeUtils_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A4E2C0BB98D6B6C7201A46E8 /* Pods-QLQRCodeUtils_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QLQRCodeUtils_Example.release.xcconfig"; path = "Target Support Files/Pods-QLQRCodeUtils_Example/Pods-QLQRCodeUtils_Example.release.xcconfig"; sourceTree = "<group>"; };
-		E6DC8D995CD0B32FAC81EAE2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E6DC8D995CD0B32FAC81EAE2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		E9069206B9424A319613D167 /* Pods_QLQRCodeUtils_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QLQRCodeUtils_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF64B203D1EE6BFA90E26EC4 /* Pods-QLQRCodeUtils_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QLQRCodeUtils_Example.debug.xcconfig"; path = "Target Support Files/Pods-QLQRCodeUtils_Example/Pods-QLQRCodeUtils_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -193,7 +193,6 @@
 				1146820B92025C3CF6B77FC8 /* Pods-QLQRCodeUtils_Tests.debug.xcconfig */,
 				97395000D65C95B7154A8646 /* Pods-QLQRCodeUtils_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

@@ -1,0 +1,6 @@
+framework module Pods_QLQRCodeUtils_Example {
+  umbrella header "Pods-QLQRCodeUtils_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

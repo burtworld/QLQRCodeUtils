@@ -1,0 +1,6 @@
+framework module QLQRCodeUtils {
+  umbrella header "QLQRCodeUtils-umbrella.h"
+
+  export *
+  module * { export * }
+}
